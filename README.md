@@ -20,7 +20,7 @@ First, we introduce [Linguee](http://www.linguee.com/) as an additional source o
 2. Of the elements in the scraped set that are multi-word expressions (phrasal in nature), query Wordnet + Wiktionary (via [Wordnik](https://www.wordnik.com/)) for their existence.
 3. Take some top *k* elements that are unique to Linguee, and hand validate them against Schneider's definition. If they meet the definition of an MWE, then this shows promise as a potential datasource.
 
-To run the above validation process, we will use the following (preliminary)directory structure. 
+To run the above validation process, we will use the following (preliminary) directory structure. 
 
 ```
 .
