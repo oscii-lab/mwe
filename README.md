@@ -22,6 +22,7 @@ First, we introduce [Linguee](http://www.linguee.com/) as an additional source o
 
 To run the above validation process, we will use the following (preliminary)directory structure. 
 
+```
 .
 ├── validation
 |   ├── linguee.py
@@ -32,3 +33,4 @@ To run the above validation process, we will use the following (preliminary)dire
 ├── reference
 |   └── schneider.pdf
 └── README.md
+```
