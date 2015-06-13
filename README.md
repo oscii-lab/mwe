@@ -26,7 +26,7 @@ To run the above validation process, we will use the following (preliminary) dir
 .
 ├── validation
 |   ├── linguee.py
-|   └── wordnik.py
+|   └── wordnik_parser.py
 ├── data
 |   ├── linguee_10000.csv
 |   └── linguee_unique.csv
