@@ -18,3 +18,14 @@ def get_sub_pages():
     response = urllib2.urlopen(BASE_URL + SEARCH_SUB_URL)
     html = response.read()
 
+    soup = BeautifulSoup(html)
+    url_tags = [tag.find('a') for tag in soup.find_all('td')]
+    return [url.get('href') for url in url_tags if url is not None]
+
+def get_words(sub_urls):
+    """Parses the words from each sub-url, returns them as a list."""
+    word_list = []
+
+    for url in sub_urls:
+        response = urllib2.urlopen(BASE_URL + url)
+        html = response.read()
